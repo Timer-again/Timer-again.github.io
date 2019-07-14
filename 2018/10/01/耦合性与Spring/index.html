@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | zhaker的博客</title>
+  <title>耦合性与Spring | zhaker的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="zhaker的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="一、什么是程序间的耦合性？我对其定义为：一个方法或者一串代码，如果需要调用另一个方法或者另一个类来完成工作，如果另一个类或者方法并未创建就会造成这个方法或者类无法成功编译我就称他们之间存在耦合性。 二、能够完全消灭项目中所有得耦合性吗？不能且违背了Java语言的规则。Java的最大特点是万物皆对象，也就是大部分我们Java程序员都是在new对象，来调用另一个类或者另一个方法。在一个项目里不产生">
+<meta name="keywords" content="框架">
+<meta property="og:type" content="article">
+<meta property="og:title" content="耦合性与Spring">
+<meta property="og:url" content="http://yoursite.com/2018/10/01/耦合性与Spring/index.html">
 <meta property="og:site_name" content="zhaker的博客">
+<meta property="og:description" content="一、什么是程序间的耦合性？我对其定义为：一个方法或者一串代码，如果需要调用另一个方法或者另一个类来完成工作，如果另一个类或者方法并未创建就会造成这个方法或者类无法成功编译我就称他们之间存在耦合性。 二、能够完全消灭项目中所有得耦合性吗？不能且违背了Java语言的规则。Java的最大特点是万物皆对象，也就是大部分我们Java程序员都是在new对象，来调用另一个类或者另一个方法。在一个项目里不产生">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/assets/BlogImg/Timer.jpeg">
+<meta property="og:updated_time" content="2019-07-14T09:13:12.154Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zhaker的博客">
+<meta name="twitter:title" content="耦合性与Spring">
+<meta name="twitter:description" content="一、什么是程序间的耦合性？我对其定义为：一个方法或者一串代码，如果需要调用另一个方法或者另一个类来完成工作，如果另一个类或者方法并未创建就会造成这个方法或者类无法成功编译我就称他们之间存在耦合性。 二、能够完全消灭项目中所有得耦合性吗？不能且违背了Java语言的规则。Java的最大特点是万物皆对象，也就是大部分我们Java程序员都是在new对象，来调用另一个类或者另一个方法。在一个项目里不产生">
+<meta name="twitter:image" content="http://yoursite.com/assets/BlogImg/Timer.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="zhaker的博客" type="application/atom+xml">
   
@@ -138,74 +145,61 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-耦合性与Spring" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/10/10/SpringMVC与其运行原理/" class="archive-article-date">
-  	<time datetime="2018-10-10T10:43:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/10/10/SpringMVC与其运行原理/">SpringMVC与其运行原理</a>
+    <h1 class="article-title" itemprop="name">
+      耦合性与Spring
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">框架</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/10/01/耦合性与Spring/" class="archive-article-date">
+        
+        <a href="/2018/10/01/耦合性与Spring/" class="archive-article-date">
   	<time datetime="2018-10-01T06:55:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-01</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/10/01/耦合性与Spring/">耦合性与Spring</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> <img src="/assets/BlogImg/Timer.jpeg" alt="zhaker"></p>
+<h2 id="一、什么是程序间的耦合性？"><a href="#一、什么是程序间的耦合性？" class="headerlink" title="一、什么是程序间的耦合性？"></a>一、什么是程序间的耦合性？</h2><p>我对其定义为：一个方法或者一串代码，如果需要调用另一个方法或者另一个类来完成工作，如果另一个类或者方法并未创建就会造成这个方法或者类无法成功编译我就称他们之间存在耦合性。</p>
+<h2 id="二、能够完全消灭项目中所有得耦合性吗？"><a href="#二、能够完全消灭项目中所有得耦合性吗？" class="headerlink" title="二、能够完全消灭项目中所有得耦合性吗？"></a>二、能够完全消灭项目中所有得耦合性吗？</h2><p>不能且违背了Java语言的规则。Java的最大特点是万物皆对象，也就是大部分我们Java程序员都是在new对象，来调用另一个类或者另一个方法。在一个项目里不产生一点耦合性完全是不现实的做法，我们只能最大限度的降低方法与方法，类与类之间的耦合性。</p>
+<h2 id="三、如何降低程序间的耦合？"><a href="#三、如何降低程序间的耦合？" class="headerlink" title="三、如何降低程序间的耦合？"></a>三、如何降低程序间的耦合？</h2><a id="more"></a>
+<p>你可能认为使用反射机制是最好的办法，但是我却认为用反射机制作为解决系统耦合性是误用，反射机制是一个非常强大的功能, 其在对于动态调用对象和对象方法上具有不可替代的作用. 同时其具有很强的灵活性, 给于了编码者最大程度的可操作性. 但正是其强大的灵活性决定了其不能成为模块间卸耦的解决方案, 更不能成为系统间的卸耦方案. 想想看, 一个模块 A 所需要的另外一个模块 B, 通过反射机制, 一般就是直接通过类名, 方法名 和 属性名对其进行操作, 而这些 String 是没有任何限制机制的. 也就说, 对于 B 改变了方法名, A 是没有任何异象的. 那么A还是可以编译通过. 但是运行时, 其就可能遇到找不类, 方法或者Field 等异常. 这样的不确定性, 在模块间是绝对不能出现的。<br><strong>最好的办法是使用Spring</strong></p>
+<h2 id="四、什么是Spring-其如何实现降低耦合？"><a href="#四、什么是Spring-其如何实现降低耦合？" class="headerlink" title="四、什么是Spring,其如何实现降低耦合？"></a>四、什么是Spring,其如何实现降低耦合？</h2><p>Spring是一个开源框架，它由Rod Johnson创建。它是为了解决企业应用开发的复杂性而创建的。<br>Spring的用途不仅限于服务器端的开发。从简单性、可测试性和松耦合的角度而言，任何Java应用都可以从Spring中受益<br>Spring的IOC将基于实现类的耦合变成基于接口的耦合，可以避免硬编码所造成的程序过度耦合，而接下来需要解决的问题就是，如何确定该接口的实现类,这样就降低了整个系统间的耦合度。</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -217,57 +211,115 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/01/耦合性与Spring/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/10/String,StringBuffer,StringBuilder之间的的区别/" class="archive-article-date">
-  	<time datetime="2018-06-10T02:21:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-10</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/10/10/SpringMVC与其运行原理/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          SpringMVC与其运行原理
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/06/10/String,StringBuffer,StringBuilder之间的的区别/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">String,StringBuffer,StringBuilder之间的的区别</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/10/String,StringBuffer,StringBuilder之间的的区别/">String,StringBuffer,StringBuilder之间的的区别</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Java基础</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -290,8 +342,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

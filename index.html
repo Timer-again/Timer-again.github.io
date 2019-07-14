@@ -140,19 +140,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-我的第一篇hexo博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-SpringMVC与其运行原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/10/我的第一篇hexo博客/">String,StringBuffer,StringBuilder之间的的区别</a>
+      <a class="article-title" href="/2018/10/10/SpringMVC与其运行原理/">SpringMVC与其运行原理</a>
     </h1>
   
 
         
-        <a href="/2018/10/10/我的第一篇hexo博客/" class="archive-article-date">
+        <a href="/2018/10/10/SpringMVC与其运行原理/" class="archive-article-date">
   	<time datetime="2018-10-10T10:43:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-10</time>
 </a>
         
@@ -161,21 +161,166 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p> <img src="/assets/BlogImg/Timer.jpeg" alt="zhaker"></p>
-<h2 id="一、String-类–Java中的字符串常量String"><a href="#一、String-类–Java中的字符串常量String" class="headerlink" title="一、String 类–Java中的字符串常量String"></a>一、String 类–Java中的字符串常量String</h2><p>在Java编程中，运用最多的当属字符串，Java为广大开发者提供了String类来操作和创建字符串。但是我们需要注意到一点，String的值是不可变的，我们每次对字符串的操作都是生成了一个新的string对象，这样就造成了效率低下并且大量浪费了有限的内存空间。<br><img src="/assets/BlogImg/1_01.jpg" alt="zhaker"><br>我们可以看下上面这张图，String初始的值如果为”hello”,我们要在它的后面加上”world”，这个过程会在堆中开辟几个内存空间呢？答案我想通过上面的图你已经明白了，是3次。</p>
-<blockquote>
-<p>String str=”hello”<br>str=str+”world”</p>
-</blockquote>
-<p>看似只有两个字符串，却开辟了三次内存空间,这样你是不是明白了我为什么说造成了效率低下且浪费内存空间呢？为了应对经常性的字符串相关的操作，就需要使用Java提供的其他两个操作字符串的类——StringBuffer类和StringBuild类来对此种经常需要变化字符串进行处理。</p>
-<h2 id="二、StringBuffer-和-StringBuilder-类——StringBuffer、StringBuilder字符串变量"><a href="#二、StringBuffer-和-StringBuilder-类——StringBuffer、StringBuilder字符串变量" class="headerlink" title="二、StringBuffer 和 StringBuilder 类——StringBuffer、StringBuilder字符串变量"></a>二、StringBuffer 和 StringBuilder 类——StringBuffer、StringBuilder字符串变量</h2><p>当我们对字符串进行修改的时候，就需要使用 StringBuffer 和 StringBuilder 类。<br>和 String 类最大的不同是，StringBuffer 和 StringBuilder 类的对象能够被多次的修改，并且不产生新的未使用对象<br>StringBuffer和StringBuilder（Java 5 中被提出）最大的不同在于StringBuilder 的方法不是线程安全的（不能同步访问），因此StringBuilder 相较于 StringBuffer 有速度优势，所以多数情况下建议使用 StringBuilder 类。然而在应用程序要求线程安全的情况下，则必须使用 StringBuffer 类。</p>
-<h2 id="三、三者间的区别"><a href="#三、三者间的区别" class="headerlink" title="三、三者间的区别"></a>三、三者间的区别</h2><p>(1)字符修改上的区别|主要</p>
-<p>String：不可变字符串；</p>
-<p>StringBuffer：可变字符串、效率低、线程安全；</p>
-<p>StringBuilder：可变字符序列、效率高、线程不安全；</p>
-<p>(2)初始化上的区别，String可以空赋值，后者则不行</p>
-<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><p>1.操作少量的字符串数据用 String；</p>
-<p>2.单线程操作大量字符串数据推荐使用 StringBuilder</p>
-<p>3.多线程操作大量字符串数据使用StringBuffer；</p>
+<h2 id="一、什么是-Spring-MVC？"><a href="#一、什么是-Spring-MVC？" class="headerlink" title="一、什么是 Spring MVC？"></a>一、什么是 Spring MVC？</h2><p>Spring MVC 属于 SpringFrameWork 的后续产品，已经融合在 Spring Web Flow 里面，是一个强大灵活的 Web 框架。其提供了一个 DispatcherServlet 作为前端控制器来分配请求，其主要由DispatcherServlet、处理器映射器、处理器适配器、处理器(控制器)、视图解析器、视图组成。其运行原理如下图：<br>  <img src="/assets/BlogImg/2_01.png" alt="zhaker"></p>
+        
+          <a class="article-more-a" href="/2018/10/10/SpringMVC与其运行原理/#more">more >></a>
+        
+      
 
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">框架</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/10/SpringMVC与其运行原理/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-耦合性与Spring" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/01/耦合性与Spring/">耦合性与Spring</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/01/耦合性与Spring/" class="archive-article-date">
+  	<time datetime="2018-10-01T06:55:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> <img src="/assets/BlogImg/Timer.jpeg" alt="zhaker"></p>
+<h2 id="一、什么是程序间的耦合性？"><a href="#一、什么是程序间的耦合性？" class="headerlink" title="一、什么是程序间的耦合性？"></a>一、什么是程序间的耦合性？</h2><p>我对其定义为：一个方法或者一串代码，如果需要调用另一个方法或者另一个类来完成工作，如果另一个类或者方法并未创建就会造成这个方法或者类无法成功编译我就称他们之间存在耦合性。</p>
+<h2 id="二、能够完全消灭项目中所有得耦合性吗？"><a href="#二、能够完全消灭项目中所有得耦合性吗？" class="headerlink" title="二、能够完全消灭项目中所有得耦合性吗？"></a>二、能够完全消灭项目中所有得耦合性吗？</h2><p>不能且违背了Java语言的规则。Java的最大特点是万物皆对象，也就是大部分我们Java程序员都是在new对象，来调用另一个类或者另一个方法。在一个项目里不产生一点耦合性完全是不现实的做法，我们只能最大限度的降低方法与方法，类与类之间的耦合性。</p>
+<h2 id="三、如何降低程序间的耦合？"><a href="#三、如何降低程序间的耦合？" class="headerlink" title="三、如何降低程序间的耦合？"></a>三、如何降低程序间的耦合？</h2>
+        
+          <a class="article-more-a" href="/2018/10/01/耦合性与Spring/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">框架</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/01/耦合性与Spring/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-String,StringBuffer,StringBuilder之间的的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/10/String,StringBuffer,StringBuilder之间的的区别/">String,StringBuffer,StringBuilder之间的的区别</a>
+    </h1>
+  
+
+        
+        <a href="/2018/06/10/String,StringBuffer,StringBuilder之间的的区别/" class="archive-article-date">
+  	<time datetime="2018-06-10T02:21:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> <img src="/assets/BlogImg/Timer.jpeg" alt="zhaker"></p>
+<h2 id="一、String-类–Java中的字符串常量String"><a href="#一、String-类–Java中的字符串常量String" class="headerlink" title="一、String 类–Java中的字符串常量String"></a>一、String 类–Java中的字符串常量String</h2><p>在Java编程中，运用最多的当属字符串，Java为广大开发者提供了String类来操作和创建字符串。但是我们需要注意到一点，String的值是不可变的，我们每次对字符串的操作都是生成了一个新的string对象，这样就造成了效率低下并且大量浪费了有限的内存空间。<br><img src="/assets/BlogImg/1_01.jpg" alt="zhaker"></p>
+        
+          <a class="article-more-a" href="/2018/06/10/String,StringBuffer,StringBuilder之间的的区别/#more">more >></a>
+        
       
 
       
@@ -198,7 +343,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/10/我的第一篇hexo博客/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/06/10/String,StringBuffer,StringBuilder之间的的区别/">展开全文 >></a>
         </p>
       
 
@@ -311,6 +456,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">框架</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Java基础</a>
