@@ -6,15 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 框架 | zhaker的博客</title>
+  <title>CentOS环境下编译安装nginx | zhaker的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="zhaker的博客">
-<meta property="og:url" content="http://yoursite.com/tags/框架/index.html">
+  <meta name="description" content="一、下载Nginx [root@zhaker]# wget https://nginx.org/download/nginx-1.16.0.tar.gz  二、解压Nginx压缩包 [root@zhaker]# tar -xyz nginx-1.16.0.tar.gz  三、进入解压后的目录 [root@zhaker]# cd nginx-1.16.0">
+<meta name="keywords" content="Java进阶">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS环境下编译安装nginx">
+<meta property="og:url" content="http://yoursite.com/2019/06/07/CentOS环境下编译安装nginx/index.html">
 <meta property="og:site_name" content="zhaker的博客">
+<meta property="og:description" content="一、下载Nginx [root@zhaker]# wget https://nginx.org/download/nginx-1.16.0.tar.gz  二、解压Nginx压缩包 [root@zhaker]# tar -xyz nginx-1.16.0.tar.gz  三、进入解压后的目录 [root@zhaker]# cd nginx-1.16.0">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/assets/BlogImg/Timer.jpeg">
+<meta property="og:image" content="http://yoursite.com/assets/BlogImg/4_04.png">
+<meta property="og:updated_time" content="2019-07-14T10:05:17.981Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zhaker的博客">
+<meta name="twitter:title" content="CentOS环境下编译安装nginx">
+<meta name="twitter:description" content="一、下载Nginx [root@zhaker]# wget https://nginx.org/download/nginx-1.16.0.tar.gz  二、解压Nginx压缩包 [root@zhaker]# tar -xyz nginx-1.16.0.tar.gz  三、进入解压后的目录 [root@zhaker]# cd nginx-1.16.0">
+<meta name="twitter:image" content="http://yoursite.com/assets/BlogImg/Timer.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="zhaker的博客" type="application/atom+xml">
   
@@ -138,98 +146,201 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-CentOS环境下编译安装nginx" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/10/10/SpringMVC与其运行原理/" class="archive-article-date">
-  	<time datetime="2018-10-10T10:43:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/10/10/SpringMVC与其运行原理/">SpringMVC与其运行原理</a>
+    <h1 class="article-title" itemprop="name">
+      CentOS环境下编译安装nginx
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/06/07/CentOS环境下编译安装nginx/" class="archive-article-date">
+  	<time datetime="2019-06-07T12:55:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> <img src="/assets/BlogImg/Timer.jpeg" alt="zhaker"></p>
+<h2 id="一、下载Nginx"><a href="#一、下载Nginx" class="headerlink" title="一、下载Nginx"></a>一、下载Nginx</h2><blockquote>
+<p>[root@zhaker]# wget <a href="https://nginx.org/download/nginx-1.16.0.tar.gz" target="_blank" rel="noopener">https://nginx.org/download/nginx-1.16.0.tar.gz</a></p>
+</blockquote>
+<h2 id="二、解压Nginx压缩包"><a href="#二、解压Nginx压缩包" class="headerlink" title="二、解压Nginx压缩包"></a>二、解压Nginx压缩包</h2><blockquote>
+<p>[root@zhaker]# tar -xyz nginx-1.16.0.tar.gz</p>
+</blockquote>
+<h2 id="三、进入解压后的目录"><a href="#三、进入解压后的目录" class="headerlink" title="三、进入解压后的目录"></a>三、进入解压后的目录</h2><blockquote>
+<p>[root@zhaker]# cd nginx-1.16.0</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="四、目录结构"><a href="#四、目录结构" class="headerlink" title="四、目录结构"></a>四、目录结构</h2><blockquote>
+<p>[root@zhaker nginx-1.16.0]# ll<br>total 772<br>drwxr-xr-x 6 1001 1001   4096 Jul  7 12:41 auto             # 用于获取系统编译环境及系统所能提供特性<br>-rw-r–r– 1 1001 1001 296223 Apr  6 23:13 CHANGES          # 英文版changes<br>-rw-r–r– 1 1001 1001 451813 Apr  6 23:13 CHANGES.ru       # 俄文版本changes<br>drwxr-xr-x 2 1001 1001   4096 Jul  7 12:41 conf             #<br>配置示例。文件夹里的配置文件会拷贝到安装目录，成为默认配置<br>-rwxr-xr-x 1 1001 1001   2502 Apr  6 23:13 configure        # 脚本文件，生成中间文件，为编译准备环境<br>drwxr-xr-x 4 1001 1001   4096 Jul  7 12:41 contrib          #<br>第三方贡献，包括geo2nginx.pl、unicode2nginx和vim高亮<br>drwxr-xr-x 2 1001 1001   4096 Jul  7 12:41 html             # 包含默认的50X页面和index页面的html<br>-rw-r–r– 1 1001 1001   1397 Apr  6 23:13 LICENSE          # BSD许可<br>drwxr-xr-x 2 1001 1001   4096 Jul  7 12:41 man              # linux对nginx的帮助文件，用man指令打开<br>-rw-r–r– 1 1001 1001     49 Apr  6 23:13 README           # readme<br>drwxr-xr-x 9 1001 1001   4096 Jul  7 12:41 src              # 源代码</p>
+</blockquote>
+<h2 id="五、vim的Nginx代码高亮"><a href="#五、vim的Nginx代码高亮" class="headerlink" title="五、vim的Nginx代码高亮"></a>五、vim的Nginx代码高亮</h2><blockquote>
+<p>[root@zhaker nginx-1.16.0]# mkdir ~/.vim &amp;&amp; cp -r contrib/vim/* “$_” </p>
+</blockquote>
+<h2 id="六、configure参数选项"><a href="#六、configure参数选项" class="headerlink" title="六、configure参数选项"></a>六、configure参数选项</h2><blockquote>
+<p>[root@zhaker nginx-1.16.0]# ./configure –help<br>with-<em>_module表示将该模块编译进nginx，也就是说默认不会编译该模块<br>without-</em>_module表示不把该模块编译进nginx，也就是说默认会编译该模块</p>
+</blockquote>
+<h2 id="七、安装PCRE"><a href="#七、安装PCRE" class="headerlink" title="七、安装PCRE"></a>七、安装PCRE</h2><blockquote>
+<p>[root@zhaker nginx-1.16.0]# wget <a href="https://ftp.pcre.org/pub/pcre/pcre-8.42.tar.gz" target="_blank" rel="noopener">https://ftp.pcre.org/pub/pcre/pcre-8.42.tar.gz</a><br>[root@zhaker nginx-1.16.0]# sudo ./configure<br>[root@zhaker nginx-1.16.0]# yum list | grep gcc<br>执行PCRE的configure时会检查gcc依赖，如果系统没有安装gcc，则需要安装<br>[root@zhaker nginx-1.16.0]# sudo yum install -y gcc<br>[root@zhaker nginx-1.16.0]# sudo make &amp;&amp; sudo make install</p>
+</blockquote>
+<h2 id="八、安装zlib"><a href="#八、安装zlib" class="headerlink" title="八、安装zlib"></a>八、安装zlib</h2><blockquote>
+<p>[root@zhaker nginx-1.16.0]# yum list |grep zlib*<br>[root@zhaker nginx-1.16.0]# sudo yum install -y zlib-devel</p>
+</blockquote>
+<h2 id="九、configure-success"><a href="#九、configure-success" class="headerlink" title="九、configure success"></a>九、configure success</h2><blockquote>
+<p>[root@zhaker nginx-1.16.0]# ./configure –prefix=/usr/local/nginx<br>[root@zhaker nginx-1.16.0]# ll<br>[root@zhaker nginx-1.16.0]# cd objs/<br>[root@zhaker objs]# ll<br>[root@zhaker objs]# vim ngx_modules.c</p>
+</blockquote>
+<h2 id="十、make-and-install"><a href="#十、make-and-install" class="headerlink" title="十、make and install"></a>十、make and install</h2><blockquote>
+<p>[root@zhaker nginx-1.16.0]# sudo make &amp;&amp; sudo make install</p>
+</blockquote>
+<h2 id="十一、启动nginx"><a href="#十一、启动nginx" class="headerlink" title="十一、启动nginx"></a>十一、启动nginx</h2><blockquote>
+<p>cd 进入sbin文件夹<br>[root@zhaker sbin]# sudo ./nginx -t<br>[root@zhaker sbin]# sudo ./nginx<br><img src="/assets/BlogImg/4_04.png" alt="zhaker"></p>
+</blockquote>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">框架</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Java进阶</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/06/07/CentOS环境下编译安装nginx/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/10/01/耦合性与Spring/" class="archive-article-date">
-  	<time datetime="2018-10-01T06:55:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-01</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/10/10/SpringMVC与其运行原理/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SpringMVC与其运行原理</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/10/01/耦合性与Spring/">耦合性与Spring</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">框架</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -252,9 +363,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
