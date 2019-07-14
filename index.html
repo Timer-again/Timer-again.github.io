@@ -140,86 +140,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-我的第二篇hexo博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/12/我的第二篇hexo博客/">我的第二篇hexo博客</a>
-    </h1>
-  
-
-        
-        <a href="/2019/07/12/我的第二篇hexo博客/" class="archive-article-date">
-  	<time datetime="2019-07-12T10:43:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<hr>
-<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><p>内容<br>内容<br>内容<br>内容<br>
-        
-          <a class="article-more-a" href="/2019/07/12/我的第二篇hexo博客/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/12/我的第二篇hexo博客/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-我的第一篇hexo博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -227,24 +147,34 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/10/我的第一篇hexo博客/">我的第一篇hexo博客</a>
+      <a class="article-title" href="/2018/10/10/我的第一篇hexo博客/">String,StringBuffer,StringBuilder之间的的区别</a>
     </h1>
   
 
         
-        <a href="/2019/07/10/我的第一篇hexo博客/" class="archive-article-date">
-  	<time datetime="2019-07-10T10:43:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-10</time>
+        <a href="/2018/10/10/我的第一篇hexo博客/" class="archive-article-date">
+  	<time datetime="2018-10-10T10:43:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<hr>
-<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><p>内容<br>内容</p>
+        <p> <img src="/assets/BlogImg/Timer.jpeg" alt="zhaker"></p>
+<h2 id="一、String-类–Java中的字符串常量String"><a href="#一、String-类–Java中的字符串常量String" class="headerlink" title="一、String 类–Java中的字符串常量String"></a>一、String 类–Java中的字符串常量String</h2><p>在Java编程中，运用最多的当属字符串，Java为广大开发者提供了String类来操作和创建字符串。但是我们需要注意到一点，String的值是不可变的，我们每次对字符串的操作都是生成了一个新的string对象，这样就造成了效率低下并且大量浪费了有限的内存空间。<br><img src="/assets/BlogImg/1_01.jpg" alt="zhaker"><br>我们可以看下上面这张图，String初始的值如果为”hello”,我们要在它的后面加上”world”，这个过程会在堆中开辟几个内存空间呢？答案我想通过上面的图你已经明白了，是3次。</p>
+<blockquote>
+<p>String str=”hello”<br>str=str+”world”</p>
+</blockquote>
+<p>看似只有两个字符串，却开辟了三次内存空间,这样你是不是明白了我为什么说造成了效率低下且浪费内存空间呢？为了应对经常性的字符串相关的操作，就需要使用Java提供的其他两个操作字符串的类——StringBuffer类和StringBuild类来对此种经常需要变化字符串进行处理。</p>
+<h2 id="二、StringBuffer-和-StringBuilder-类——StringBuffer、StringBuilder字符串变量"><a href="#二、StringBuffer-和-StringBuilder-类——StringBuffer、StringBuilder字符串变量" class="headerlink" title="二、StringBuffer 和 StringBuilder 类——StringBuffer、StringBuilder字符串变量"></a>二、StringBuffer 和 StringBuilder 类——StringBuffer、StringBuilder字符串变量</h2><p>当我们对字符串进行修改的时候，就需要使用 StringBuffer 和 StringBuilder 类。<br>和 String 类最大的不同是，StringBuffer 和 StringBuilder 类的对象能够被多次的修改，并且不产生新的未使用对象<br>StringBuffer和StringBuilder（Java 5 中被提出）最大的不同在于StringBuilder 的方法不是线程安全的（不能同步访问），因此StringBuilder 相较于 StringBuffer 有速度优势，所以多数情况下建议使用 StringBuilder 类。然而在应用程序要求线程安全的情况下，则必须使用 StringBuffer 类。</p>
+<h2 id="三、三者间的区别"><a href="#三、三者间的区别" class="headerlink" title="三、三者间的区别"></a>三、三者间的区别</h2><p>(1)字符修改上的区别|主要</p>
+<p>String：不可变字符串；</p>
+<p>StringBuffer：可变字符串、效率低、线程安全；</p>
+<p>StringBuilder：可变字符序列、效率高、线程不安全；</p>
+<p>(2)初始化上的区别，String可以空赋值，后者则不行</p>
+<h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><p>1.操作少量的字符串数据用 String；</p>
+<p>2.单线程操作大量字符串数据推荐使用 StringBuilder</p>
+<p>3.多线程操作大量字符串数据使用StringBuffer；</p>
 
       
 
@@ -258,7 +188,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Java基础</a>
         		</li>
       		
 		</ul>
@@ -268,7 +198,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/10/我的第一篇hexo博客/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/10/10/我的第一篇hexo博客/">展开全文 >></a>
         </p>
       
 
@@ -383,11 +313,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
+                <a href="javascript:void(0)" class="js-tag color2">Java基础</a>
               </li>
             
             <div class="clearfix"></div>
